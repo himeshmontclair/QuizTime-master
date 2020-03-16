@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.quiztime">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/applogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/applogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.android.quiztime.ReviewActivity"></activity>
+        <activity android:name="com.example.android.quiztime.ResultActivity" />
+        <activity android:name="com.example.android.quiztime.activities.Fifth_QActivity" />
+        <activity android:name="com.example.android.quiztime.activities.Fourth_QActivity" />
+        <activity android:name="com.example.android.quiztime.activities.Third_QActivity" />
+        <activity android:name="com.example.android.quiztime.activities.Second_QActivity" />
+        <activity android:name="com.example.android.quiztime.activities.First_QActivity" />
+        <activity android:name="com.example.android.quiztime.SelectActivity" />
+        <activity android:name="com.example.android.quiztime.HomeActivity" />
+        <activity android:name="com.example.android.quiztime.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.quiztime.SignUpActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.quiztime.LoginActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+    </application>
+
+</manifest>

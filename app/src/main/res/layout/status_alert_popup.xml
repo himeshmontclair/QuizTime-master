@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/name_header_popup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="@string/alert"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_Medium" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="top|center"
+        android:padding="5dp"
+        android:text="@string/Status"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_size" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dark_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="1dp"
+        android:gravity="center|center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <TextView
+            android:id="@+id/cancel_popup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1.3"
+            android:gravity="end"
+            android:padding="1dp"
+            android:text="@string/no"
+            android:textAllCaps="true"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/text_normal_size" />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="1dp"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="@string/yes"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_normal_size" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
